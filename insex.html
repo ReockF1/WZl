@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AMV Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+
+<h1>AMV Portfolio</h1>
+<p class="subtitle">Editing Showcase</p>
+
+<div class="gallery">
+
+<div class="video" onclick="playVideo('//player.bilibili.com/player.html?bvid=BV号')">
+<img src="https://picsum.photos/400/225?random=1">
+<p>Project 01</p>
+</div>
+
+<div class="video" onclick="playVideo('//player.bilibili.com/player.html?bvid=BV号')">
+<img src="https://picsum.photos/400/225?random=2">
+<p>Project 02</p>
+</div>
+
+<div class="video" onclick="playVideo('//player.bilibili.com/player.html?bvid=BV号')">
+<img src="https://picsum.photos/400/225?random=3">
+<p>Project 03</p>
+</div>
+
+</div>
+
+</div>
+
+<div id="player" class="player hidden">
+<span onclick="closePlayer()">✕</span>
+<iframe id="frame" allowfullscreen></iframe>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
