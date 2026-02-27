@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AMV Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -10,32 +11,23 @@
 <div class="card">
 
 <h1>AMV Portfolio</h1>
-<p class="subtitle">Editing Showcase</p>
 
-<div class="gallery">
+<!-- 头像 -->
+<label class="avatarBox">
+<input type="file" id="avatarInput">
+<img id="avatarPreview" src="https://via.placeholder.com/120">
+</label>
 
-<div class="video" onclick="playVideo('//player.bilibili.com/player.html?bvid=BV16J6EBXE2n')">
-<img src="https://picsum.photos/400/225?random=1">
-<p>Project 01</p>
+<!-- 添加视频 -->
+<div class="panel">
+<input id="url" placeholder="粘贴B站封面图片链接">
+<input id="pass" placeholder="密码" type="password">
+<button onclick="add()">上传作品</button>
 </div>
 
-<div class="video" onclick="playVideo('//player.bilibili.com/player.html?bvid=BV号')">
-<img src="https://picsum.photos/400/225?random=2">
-<p>Project 02</p>
-</div>
+<!-- 展示区 -->
+<div id="gallery"></div>
 
-<div class="video" onclick="playVideo('//player.bilibili.com/player.html?bvid=BV号')">
-<img src="https://picsum.photos/400/225?random=3">
-<p>Project 03</p>
-</div>
-
-</div>
-
-</div>
-
-<div id="player" class="player hidden">
-<span onclick="closePlayer()">✕</span>
-<iframe id="frame" allowfullscreen></iframe>
 </div>
 
 <script src="script.js"></script>
