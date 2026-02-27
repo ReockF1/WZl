@@ -1,4 +1,4 @@
-const API="你的worker地址"
+const API="https://curly-morning-6dbe.qiufanb666.workers.dev/"
 
 /* 头像上传 */
 avatarInput.onchange=e=>{
